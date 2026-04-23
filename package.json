@@ -50,7 +50,7 @@
     "test:postinstall": "node scripts/postinstall.js",
     "prepare": "echo 'skip prepare (pre-built dist committed)'",
     "prepublishOnly": "pnpm run build",
-    "postinstall": "node scripts/postinstall.js",
+    "postinstall": "echo 'openspec installed'",
     "check:pack-version": "node scripts/pack-version-check.mjs",
     "release": "pnpm run release:ci",
     "release:ci": "pnpm run check:pack-version && pnpm exec changeset publish",
